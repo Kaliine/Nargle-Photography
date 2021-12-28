@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;;
+}
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.navbar-links {
+  text-decoration: none;
+}
