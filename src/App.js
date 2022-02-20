@@ -1,9 +1,10 @@
+/* eslint-disable */
 import React from 'react'
-import { BrowserRouter, Routes, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { Navbar } from './components/Navbar'
-import { Home } from './components/Home'
-import { About } from './components/About'
+import { Home } from './pages/Home'
+import { About } from './pages/About'
 
 export const App = () => {
   return (

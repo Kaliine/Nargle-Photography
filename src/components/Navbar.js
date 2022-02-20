@@ -1,9 +1,10 @@
+/* eslint-disable */
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import '../components/Navbar.css'
+import './Navbar.css'
 
-const Navbar = (props) => {
+const Navbar = () => {
 
   const menuItemsLeft = [
     { to: "/", displayName: "Home"},
@@ -22,7 +23,7 @@ const Navbar = (props) => {
       <div className='navbar-wrapper'>
         {( 
           menuItemsLeft.map((item, index) => (
-            <NavLink key={index} to={item.to} exact className="navbar-links">
+            <NavLink key={index} to={item.to} exact="true" className="navbar-links">
               {item.displayName}
             </NavLink>
           ))
@@ -32,7 +33,7 @@ const Navbar = (props) => {
       <div className='navbar-wrapper'>
         {( 
           menuItemsRight.map((item, index) => (
-            <NavLink key={index} to={item.to} exact className="navbar-links">
+            <NavLink key={index} to={item.to} exact="true" className="navbar-links">
               {item.displayName}
             </NavLink>
           ))
