@@ -1,10 +1,37 @@
 /* eslint-disable */
 import React from 'react';
+import styled from 'styled-components'
+
+const AboutWrapper = styled.section`
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+`
+const TextSection = styled.div`
+  background-color: #F5F0DF;
+  padding: 40px;
+  width: 60%;
+
+  h1,p {
+    font-family: 'Montserrat', sans-serif;
+  }
+`
+const ImgSection = styled.div`
+  background-color: #667A66;
+  width: 40%;
+`
+const Image = styled.img`
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px 15px 10px -15px;
+`
 
 const About = () => {
 
   return (
-      <section className="about-section">
+      <AboutWrapper>
+        <TextSection>
         <h1 className="about-h1">The Full Story</h1>
         <p>Nargle Photography has a deeply personal story. Growing up, I still lived in a society where playing outside with friends and letting your imagination run wild was the norm. 
           This creative side of me is a key part of my personality and shines through in my work. 
@@ -13,8 +40,13 @@ const About = () => {
           Nargle Photography was born from the meeting of my young creative mind and my professional career and the deep personal meaning of the name portrays my deep passion for photography 
           and the imagination I like to incorporate into my work. </p>
         <p>I have been studying photography for 5/6 years - graduating in 2021 with a Higher National Diploma (Photography) from Milton Keynes College. </p>
-        <p>Throughout my time studying, I have enjoyed surrealism, conceptual self portraits in and out of the studio. While specialising in those areas, I enjoy capturing memorable, good quality portrait photographs of others and helping them to realise their dream photographs.</p>
-      </section>
+        <p>Throughout my time studying, I have enjoyed surrealism, conceptual self portraits in and out of the studio. While specialising in those areas, 
+          I enjoy capturing memorable, good quality portrait photographs of others and helping them to realise their dream photographs.</p>
+          </TextSection>
+          <ImgSection>
+          <Image src="https://res.cloudinary.com/denrrpqab/image/upload/v1645388023/Nargle/noemi-macavei-katocz-zrk7WirlxgM-unsplash_sb8exy.jpg" />
+          </ImgSection>
+      </AboutWrapper>
   )
 } 
 

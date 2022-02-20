@@ -87,7 +87,7 @@ const Gallery = () => {
   return (
   <GalleryWrapper> 
   <Gallery_item1>
-    <Image src="https://res.cloudinary.com/denrrpqab/image/upload/v1645381843/Nargle/8A7C776C-D2F8-4D0A-998A-2981F9DB0E6E_s2tsof.jpg" />
+    <Image src="https://res.cloudinary.com/denrrpqab/image/upload/v1645381843/Nargle/5206CBBB-D3B0-44C3-ABAA-D5C4DFAE92A4_oweh7m.jpg" />
   </Gallery_item1>
   <Gallery_item2>
     <Image src="https://res.cloudinary.com/denrrpqab/image/upload/v1645381843/Nargle/2515F971-9596-4061-B02C-0BF1061CF153_vboeoi.jpg" class="gallery__img" alt="Image 2" />
