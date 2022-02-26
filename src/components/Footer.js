@@ -33,7 +33,8 @@ const Footer = () => {
             <Grid item xs={12} sm={10}>
             <Box>
                 <Typography fontSize="23px" letterSpacing="1px" fontFamily="cardo">Get in touch</Typography>
-                <Link href="mailto:nargle@photography.com"><Typography margin="10px" letterSpacing="2px" textTransform="uppercase" fontSize="12px" fontFamily="lora">nargle@photography.com 07946 079998 </Typography></Link>
+                <Link href="mailto:nargle@photography.com"><Typography margin="10px" letterSpacing="2px" textTransform="uppercase" fontSize="12px" fontFamily="lora">nargle@photography.com</Typography></Link>
+                <Typography margin="10px" letterSpacing="2px" textTransform="uppercase" fontSize="12px" fontFamily="lora">07946 079998 </Typography>
               </Box>
             </Grid>
           </Grid>
