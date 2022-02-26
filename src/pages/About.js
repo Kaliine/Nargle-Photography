@@ -19,6 +19,7 @@ const TextSection = styled.div`
 const ImgSection = styled.div`
   background-color: #bac4b5;
   width: 40%;
+  border-bottom: 60px solid #f9f7f6;
 `
 const Image = styled.img`
   width: 70%;
