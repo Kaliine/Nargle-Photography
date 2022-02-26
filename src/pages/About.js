@@ -3,23 +3,34 @@ import React from 'react';
 import styled from 'styled-components'
 
 const AboutWrapper = styled.section`
+  background-color: #f9f7f6;
   display: flex;
   flex-direction: row;
   min-height: 100vh;
+  padding-bottom: 40px;
 `
 const TextSection = styled.div`
   background-color: #f9f7f6;
   padding: 40px;
   width: 60%;
 
-  h1,p {
-    font-family: 'Montserrat', sans-serif;
+  h1 {
+    font-family: "Lora", Sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  p {
+    font-family: "Times New Roman", Sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6em;
   }
 `
 const ImgSection = styled.div`
   background-color: #bac4b5;
   width: 40%;
-  border-bottom: 60px solid #f9f7f6;
+  height: 20%;
 `
 const Image = styled.img`
   width: 70%;

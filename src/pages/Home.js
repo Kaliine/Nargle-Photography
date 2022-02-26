@@ -18,18 +18,25 @@ const HeroImg = styled.div`
 `
 const HeroImgTextWrapper = styled.div`
 text-align: center;
+background: rgba(255,255,255, .8);
+padding: 20px 60px;
+margin: 0 auto;
 `
 const HeroImgTextBig = styled.h1`
   font-size: 56px;
   color: black;
   font-family: 'Cardo', serif;
+  font-weight: normal;
   margin-bottom: 10px;
+  margin-top: 0;
+  letter-spacing: 1px;
   `
   const HeroImgTextSmall = styled.h1`
   font-size: 14px;
   color: black;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
   `
   const CardsSection = styled.section`
   align-items: center;
@@ -53,7 +60,7 @@ const Home = () => {
       <HeroImg>
       <HeroImgTextWrapper>
         <HeroImgTextBig>Beautiful memories</HeroImgTextBig>
-        <HeroImgTextSmall>Specializing in family portraits and surrealistic conceptual photography</HeroImgTextSmall>
+        <HeroImgTextSmall>Specialising in family portraits and surrealistic conceptual photography</HeroImgTextSmall>
         </HeroImgTextWrapper>
         </HeroImg>
         <CardsSection>

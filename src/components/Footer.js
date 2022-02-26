@@ -11,6 +11,10 @@ const FooterWrapper = styled.section`
 background: #bac4b5;
 font-weight: bold;
 `
+const Link = styled.a`
+text-decoration: none;
+color: black;
+`
 
 const Footer = () => {
   return (
@@ -29,7 +33,7 @@ const Footer = () => {
             <Grid item xs={12} sm={10}>
             <Box>
                 <Typography fontSize="23px" letterSpacing="1px" fontFamily="cardo">Get in touch</Typography>
-                <Typography margin="10px" letterSpacing="2px" textTransform="uppercase" fontSize="12px" fontFamily="lora">nargle@photography.com 07946 079998 </Typography>
+                <Link href="mailto:nargle@photography.com"><Typography margin="10px" letterSpacing="2px" textTransform="uppercase" fontSize="12px" fontFamily="lora">nargle@photography.com 07946 079998 </Typography></Link>
               </Box>
             </Grid>
           </Grid>
@@ -48,8 +52,8 @@ const Footer = () => {
               <Box sx={{
                       padding: "10px",
                     }}>
-                  <a href="https://www.instagram.com/narglephotography/"><FacebookIcon sx={{ fontSize: 30, padding: "2px", color: "black" }}/></a>
-                  <a href="https://www.instagram.com/narglephotography/"><InstagramIcon sx={{ fontSize: 30, padding: "2px", color: "black" }}/></a>
+                  <Link href="https://www.instagram.com/narglephotography/"><FacebookIcon sx={{ fontSize: 30, padding: "2px", color: "black" }}/></Link>
+                  <Link href="https://www.instagram.com/narglephotography/"><InstagramIcon sx={{ fontSize: 30, padding: "2px", color: "black" }}/></Link>
                 </Box>
               </Box>
             </Grid>
