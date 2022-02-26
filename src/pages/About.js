@@ -8,7 +8,7 @@ const AboutWrapper = styled.section`
   min-height: 100vh;
 `
 const TextSection = styled.div`
-  background-color: #F5F0DF;
+  background-color: #f9f7f6;
   padding: 40px;
   width: 60%;
 
@@ -17,7 +17,7 @@ const TextSection = styled.div`
   }
 `
 const ImgSection = styled.div`
-  background-color: #667A66;
+  background-color: #bac4b5;
   width: 40%;
 `
 const Image = styled.img`
