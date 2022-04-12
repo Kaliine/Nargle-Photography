@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.navbar-links {
+  text-decoration: none;
+  color: black;
+}
