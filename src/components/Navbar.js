@@ -21,6 +21,15 @@ const Navbar = (props) => {
     { to: "/contact", displayName: "Contact"},
   ]
 
+  const burgerMenuItems = [
+    { to: "/", displayName: "Home"},
+    { to: "/about", displayName: "About"},
+    { to: "/gallery", displayName: "Gallery"},
+    { to: "/pricing", displayName: "Pricing"},
+    { to: "/faq", displayName: "FAQ"},
+    { to: "/contact", displayName: "Contact"},
+  ]
+
   return ( 
     <div className="navbar">
       <div className='link-wrapper'>
@@ -42,7 +51,7 @@ const Navbar = (props) => {
           ))
         )}
       </div>
-      <BurgerMenu items={menuItemsLeft} />
+      <BurgerMenu items={burgerMenuItems} />
     </div>
   )
 }
