@@ -14,6 +14,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background: #f9f7f6;
+padding-top: 70px;
 `
 
 const Faq = () => {

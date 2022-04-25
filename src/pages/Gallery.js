@@ -7,6 +7,7 @@ const GalleryWrapper = styled.div`
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(24, 5vw);
   grid-gap: 2px; 
+  padding-top: 160px;
 `
 const Image = styled.img`
 width: 100%;

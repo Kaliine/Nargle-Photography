@@ -8,6 +8,7 @@ const AboutWrapper = styled.section`
   flex-direction: row;
   min-height: 100vh;
   padding-bottom: 40px;
+  padding-top: 70px;
 `
 const TextSection = styled.div`
   background-color: #f9f7f6;

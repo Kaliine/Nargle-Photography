@@ -15,6 +15,7 @@ const HeroImg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 70px;
 `
 const HeroImgTextWrapper = styled.div`
 text-align: center;
