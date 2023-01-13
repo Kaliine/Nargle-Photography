@@ -5,29 +5,20 @@
 }
 
 .burger a {
-  color: black;
-  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-family: 'Montserrat';
   font-size: 18px;
   letter-spacing: 2px;
   line-height: 25px;
   text-decoration: none;
 }
 
-.burger a:hover {
-  border-bottom: 1.5px solid #000;
-}
-
-.burger a:active {
-  border-bottom: 1.5px solid #000;
-}
-
 .burger .menu {
   display: none;
   clear: both;
   transition: max-height .2s ease-out;
-  background-color: #bac4b5;
+  background-color: #73C89A;
   list-style-type: none;
-  margin-top: 70px;
   padding: 25px;
 }
 
@@ -40,7 +31,7 @@
 }
 
 .burger .menu-icon .navicon {
-  background: black;
+  background: #fff;;
   display: block;
   height: 2px;
   position: relative;
@@ -49,7 +40,7 @@
 }
 
 .burger .menu-icon .navicon:before, .burger .menu-icon .navicon:after {
-  background: black;
+  background: #fff;;
   content: '';
   display: block;
   height: 100%;

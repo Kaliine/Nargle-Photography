@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React from "react";
 import { NavLink } from 'react-router-dom';
+import { Link } from "react-router-dom"
 import "../components/Navbar.css"
 import BurgerMenu from './BurgerMenu';
 
@@ -9,42 +10,28 @@ import BurgerMenu from './BurgerMenu';
 
 const Navbar = (props) => {
 
-  const menuItemsLeft = [
-    { to: "/", displayName: "Home"},
-    { to: "/about", displayName: "About"},
-    { to: "/gallery", displayName: "Gallery"},
-  ]
+ /*const logoHome = [
+    { to: "/", },
+  ]*/
 
-  const menuItemsRight = [
-    { to: "/pricing", displayName: "Pricing"},
-    { to: "/faq", displayName: "FAQ"},
-    { to: "/contact", displayName: "Contact"},
+  const menuItems = [
+    { to: "/services", displayName: "Tjänster"},
+    { to: "/about", displayName: "Om oss"},
+    { to: "/contact", displayName: "Kontakt"},
   ]
 
   const burgerMenuItems = [
-    { to: "/", displayName: "Home"},
-    { to: "/about", displayName: "About"},
-    { to: "/gallery", displayName: "Gallery"},
-    { to: "/pricing", displayName: "Pricing"},
-    { to: "/faq", displayName: "FAQ"},
-    { to: "/contact", displayName: "Contact"},
+    { to: "/services", displayName: "Tjänster"},
+    { to: "/about", displayName: "Om oss"},
+    { to: "/contact", displayName: "Kontakt"},
   ]
 
   return ( 
     <div className="navbar">
-      <div className='link-wrapper'>
+        <Link className="logo" to={'#home'} color="inherit" underline="none" />
+      <div className="link-wrapper">
         {( 
-          menuItemsLeft.map((item, index) => (
-            <NavLink key={index} to={item.to} exact="true" className="navbar-links">
-              {item.displayName}
-            </NavLink>
-          ))
-        )}
-      </div>
-      <h1 className="header-welcome">Nargle Photography</h1>
-      <div className='link-wrapper'>
-        {( 
-          menuItemsRight.map((item, index) => (
+          menuItems.map((item, index) => (
             <NavLink key={index} to={item.to} exact="true" className="navbar-links">
               {item.displayName}
             </NavLink>
