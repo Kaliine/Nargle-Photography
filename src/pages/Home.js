@@ -5,10 +5,7 @@ import img from 'assets/bg-image.jpg'
 import toothIcon from '../assets/icons8-dental-64.png'
 import tfLogo from '../assets/pic1.jpg'
 import patient from '../assets/patient.jpg'
-import phone from '../assets/phone.svg'
-import mail from '../assets/mail.svg'
-import mapPin from '../assets/map-pin.svg'
-import clock from '../assets/clock-time.svg'
+import { Navbar } from '../components/Navbar'
 
 /* Hero section */
 const HeroImg = styled.div`

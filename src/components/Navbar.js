@@ -1,45 +1,38 @@
 /* eslint-disable */
-import React from "react";
-import { NavLink } from 'react-router-dom';
-import { Link } from "react-router-dom"
+import React, { useRef } from 'react'
 import "../components/Navbar.css"
-import BurgerMenu from './BurgerMenu';
+import { FaBars, FaTimes } from "react-icons/fa"
 
-//simple navbar with props
-//by adding 'exact className' the / link isn't active all the time
+const Navbar = () => {
+  const navRef = useRef()
 
-const Navbar = (props) => {
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav")
+  }
 
- /*const logoHome = [
-    { to: "/", },
-  ]*/
+  const hideNavbar =()=>{
+    navRef.current.classList.remove("responsive_nav")
+  }
 
-  const menuItems = [
-    { to: "/services", displayName: "Tjänster"},
-    { to: "/about", displayName: "Om oss"},
-    { to: "/contact", displayName: "Kontakt"},
-  ]
-
-  const burgerMenuItems = [
-    { to: "/services", displayName: "Tjänster"},
-    { to: "/about", displayName: "Om oss"},
-    { to: "/contact", displayName: "Kontakt"},
-  ]
-
-  return ( 
-    <div className="navbar">
-        <Link className="logo" to={'#home'} color="inherit" underline="none" />
-      <div className="link-wrapper">
-        {( 
-          menuItems.map((item, index) => (
-            <NavLink key={index} to={item.to} exact="true" className="navbar-links">
-              {item.displayName}
-            </NavLink>
-          ))
-        )}
+  return (
+    <header>
+      <a href="#home">
+        <div className='logo'></div>
+      </a>
+      <div className='nav-container'>
+        <nav ref={navRef}>
+          <a onClick={hideNavbar} href="#services">Tjänster</a>
+          <a onClick={hideNavbar} href="#about">Om oss</a>
+          <a onClick={hideNavbar} href="#contact">Kontakt</a>
+          <button className='nav-btn nav-close-btn' onClick={showNavbar}>
+            <FaTimes />
+          </button>
+        </nav>
+        <button className='nav-btn' onClick={showNavbar}>
+          <FaBars />
+        </button>
       </div>
-      <BurgerMenu items={burgerMenuItems} />
-    </div>
+    </header>
   )
 }
 
