@@ -2,6 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from 'assets/bg-image.jpg'
+import imgMobile from 'assets/bg-image-mobile.jpg'
 import toothIcon from '../assets/icons8-dental-64.png'
 import tfLogo from '../assets/pic1.jpg'
 import patient from '../assets/patient.jpg'
@@ -19,6 +20,9 @@ const HeroImg = styled.div`
   display: flex;
   justify-content: left;
   align-items: center;
+  @media (max-width: 768px) {
+  background-image: url(${imgMobile});
+}
 `
 const HeroImgTextWrapper = styled.div`
 text-align: center;
@@ -104,7 +108,7 @@ justify-content: flex-start;
 color: #FDC5C6;
 width: 60%;
 @media (max-width: 768px) {
-  width: 80%;
+  width: 70%;
 }
 `
 const Wrapper= styled.div`
