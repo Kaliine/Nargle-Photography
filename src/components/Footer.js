@@ -17,7 +17,7 @@ const Footer = () => {
     <FooterWrapper>
       <div>
       <a href="#home">
-        <img src={logo} alt="Logga Tandhygienist Carina Andersson" height="100" widht="200" />
+        <img src={logo} alt="Logga Tandhygienist Carina Andersson" height="90" widht="190" />
       </a>
       </div>
     </FooterWrapper>

@@ -25,8 +25,8 @@ text-align: center;
 max-width: 600px;
 margin-left: 100px;
 @media (max-width: 768px) {
-  max-width: 400px;
-  margin-left: 30px;
+  justify-content: center;
+  margin: 0 20px;
 }
 `
 const HeroImgTextBig = styled.h1`
@@ -94,6 +94,7 @@ margin-left: 80px;
 margin-bottom: 20px;
 @media (max-width: 768px) {
   font-size: 26px;
+  margin-left: 40px;
 }
 `
 const TextContainer = styled.div`
@@ -190,6 +191,7 @@ margin-left: 80px;
 margin-bottom: 20px;
 @media (max-width: 768px) {
   font-size: 26px;
+  margin-left: 40px;
 }
 `
 const ContactTextContainer = styled.div`
@@ -203,6 +205,7 @@ color: #fff;
 font-size: 24px;
 @media (max-width: 768px) {
   font-size: 18px;
+  margin-bottom: 5px;
 }
 `
 const LastContactParagraph= styled.p`
@@ -211,6 +214,7 @@ font-size: 24px;
 margin-bottom: 20px;
 @media (max-width: 768px) {
   font-size: 18px;
+  margin-bottom: 20px;
 }
 `
 
