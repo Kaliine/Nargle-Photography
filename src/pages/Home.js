@@ -31,6 +31,7 @@ margin-left: 100px;
 @media (max-width: 768px) {
   justify-content: center;
   margin: 0 20px;
+  margin-bottom: 100px;
 }
 `
 const HeroImgTextBig = styled.h1`
@@ -105,10 +106,10 @@ const TextContainer = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-color: #FDC5C6;
 width: 60%;
 @media (max-width: 768px) {
-  width: 70%;
+  width: 80%;
+  max-width: 350px
 }
 `
 const Wrapper= styled.div`
@@ -124,7 +125,6 @@ margin-top: 8px;
   margin-top: 5px;
 }
 `
-
 const ServicesParagraph= styled.p`
 color: #000;
 font-size: 24px;
@@ -259,7 +259,7 @@ const Home = () => {
               </Wrapper>
               <Wrapper>
                   <ToothImg src={toothIcon} alt="Ikon tand" height="20" width="20" />
-                  <ServicesParagraph>Förebyggande behandling av karies, framförallt med olika fluorbehandlingsbehandlingsmetoder.</ServicesParagraph>
+                  <ServicesParagraph>Förebyggande behandling av karies, framförallt med olika fluorbehandlingsmetoder.</ServicesParagraph>
               </Wrapper>
               <Wrapper>
                   <ToothImg src={toothIcon} alt="Ikon tand" height="20" width="20" />
