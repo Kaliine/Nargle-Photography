@@ -239,7 +239,8 @@ const Home = () => {
         <HomeSection>
           <Section id="services">
             <PinkTextWrapper>
-              <h3>Vi välkomnar gärna nya patienter! Ring och boka tid på 0176 - 509 92.</h3>
+              <h3>Vi välkomnar gärna nya patienter! 
+              <br />Ring och boka tid på 0176 - 509 92.</h3>
             </PinkTextWrapper>
             <HeadingWrapper>
               <h2>Tjänster</h2>
